@@ -38,6 +38,12 @@ padding-top:10px;
 
 }
 
+
+        canvas {
+            background: white;
+        }
+
+
 li {
 border : 0px solid #ffffff;
 font-family: Futura, Tahoma, sans-serif;
