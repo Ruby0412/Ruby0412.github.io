@@ -1,5 +1,5 @@
 
- var canvas=document.getElementById('canvas');
+ var canvas=document.getElementById('canvas1');
 
     var cxt=canvas.getContext('2d');
     var time=0;
