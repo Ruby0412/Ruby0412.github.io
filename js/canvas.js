@@ -80,7 +80,7 @@ window.onload=function(){
 
 function setup() {
 
-    var canvas = document.getElementById("myCanvas");
+    var canvas = document.getElementById("canvas");
     var ct = canvas.getContext("2d");
     var slider1 = document.getElementById("slider1");
     var slider2 = document.getElementById("slider2");
