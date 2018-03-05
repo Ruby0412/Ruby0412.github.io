@@ -135,17 +135,52 @@ Authentication    </h3>
 		 
  <script src="js/haha.js"></script>
 
-		  
-
-<canvas id = "Canvas" width = "500" height = "500" style= "display: block;background-color:black;margin:0 auto; "></canvas>
-X<input id="slider1" type="range" min="0" max="100" />
-Z<input id="slider3" type="range" min="0" max="100" />
-Earth<input id="sun" type="range" min="0" max="100" />
-Moon<input id="earth" type="range" min="0" max="100" />
-    <script src="http://graphics.cs.wisc.edu/JS/twgl-full.min.js"></script>
-     <script src="js/haha1.js"></script>
 
 		 
+<h2>Starry Night</h2>
+ <h4 class=text>  Try different style of stars </h4>
+<input id="slider6" type="radio" name="choice" value="★" slider4.checked>  Star type 1
+<input id="slider7" type="radio" name="choice" value="✦"> Star type 2
+<input id="slider8" type="radio" name="choice" value=" ✰"> Star type 3
+<input id="slider9" type="radio" name="choice" value="✷"> Star type 4
+<input id="clickMe" type="button" value="submit" onclick="setup();" />
+
+Size of the Star <input id="slider11" type="range" min="0.01" max="0.025" step="0.005" /> 
+ Number of the Star<input id="slider12" type="range" min="100" max="500" step="100" > 
+Speed<input id="slider13" type="range" min="0.0003" max="0.0011" step="0.0002" > 
+
+
+
+
+
+<canvas id="myCanvas" width="1000" height="700" style= "display: block;background-color:black;margin:0 auto; "></canvas>
+    
+<script id="first">
+    precision mediump float;
+    varying vec2 v_texcoord;
+    uniform sampler2D u_texture;
+    uniform vec4 u_color;
+
+    void main() {
+        vec4 color = texture2D(u_texture, v_texcoord) * u_color;
+        gl_FragColor = color;
+    }
+</script>
+<script id="second">
+    uniform mat4 u_worldViewProjection;
+    attribute vec4 a_position;
+    attribute vec2 a_texcoord;
+    varying vec2 v_texcoord;
+
+    void main() {
+        v_texcoord = a_texcoord;
+        gl_Position = u_worldViewProjection * a_position;
+    }
+</script>
+
+<script src="https://twgljs.org/dist/3.x/twgl-full.min.js"></script>
+<script src="https://twgljs.org/3rdparty/chroma.min.js"></script>
+<script src="iscanvas.js"> </script>
    
        <h5>  2016 Ariel. Don't steal. </h5>
    </head>
