@@ -1,107 +1,738 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ariel's Homepage</title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/decolines.css" />
-		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto+Condensed" rel="stylesheet">
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]--><script>document.documentElement.className = 'js';</script>
-	</head>
-	<body class="demo-3">
-		<svg class="hidden">
-			<defs>
-				<symbol id="icon-arrow" viewBox="0 0 24 24">
-					<title>arrow</title>
-					<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
-				</symbol>
-				<symbol id="icon-drop" viewBox="0 0 24 24">
-					<title>drop</title>
-					<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"/><path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"/>
-				</symbol>
-				<symbol id="icon-logo" viewBox="0 0 24 24">	
-					<path d="M22 11h-4.17l3.24-3.24-1.41-1.42L15 11h-2V9l4.66-4.66-1.42-1.41L13 6.17V2h-2v4.17L7.76 2.93 6.34 4.34 11 9v2H9L4.34 6.34 2.93 7.76 6.17 11H2v2h4.17l-3.24 3.24 1.41 1.42L9 13h2v2l-4.66 4.66 1.42 1.41L11 17.83V22h2v-4.17l3.24 3.24 1.42-1.41L13 15v-2h2l4.66 4.66 1.41-1.42L17.83 13H22z"/>
-					<path d="M0 0h24v24H0z" fill="none"/>
-				</symbol>
-				<symbol id="icon-menu" viewBox="0 0 24 24">
-					<path d="M0 0h24v24H0z" fill="none"/>
-					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-				</symbol>
-			</defs>
-		</svg>
-		<main>
-			<div class="dummy">
-				<div class="dummy__icon"><svg class="icon icon--logo"><use xlink:href="#icon-logo"></use></div>
-				<div class="dummy__icon"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></div>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="Mingqi Tan Personal Site">
+	<meta name="description" content="Ariel Tan | UW Madison | CMU | Game Developer & Software Engineer">
+	<meta name="author" content="Ariel Tan">
+	<meta name="description" content="Ariel Tan | Software Developer & Engineer"/>
+	<meta name="robots" content="noodp"/>
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Mingqi Tan Personal Site" />
+	<meta property="og:description" content="Mingqi Tan | Twilio | Kilter Rewards | UW Madison | Software Developer & Engineer" />
+	<meta property="og:site_name" content="Mingqi Tan | Twilio | K
+	ilter Rewards | UW Madison | Software Developer & Engineer" />
+	
+
+	<title>Mingqi Tan</title>
+	   <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 85%;
+            max-height: 85vh;
+            margin: auto;
+             padding: 10px 20px;
+        }
+    </style>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+	<script src="assets/js/modernizr.custom.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92167775-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+		<div class="home-overlay"></div>
+		<div class="intro">
+			<div>
+				<span>root@mingqit:~$  </span><span id="cursor"> My name is Mingqi (Ariel) Tan, I am a ... </span>
 			</div>
-			<header class="codrops-header">
-				<div class="codrops-links">
+			<h1><span class="wow bounceInDown" data-wow-delay="1s">Full Stack</span> <span class="wow bounceInDown" data-wow-delay="1.75s">Software Engineer</span></h1>
+			<h1><span class="wow bounceInDown" data-wow-delay="2.5s">Game Developer</span> <span class="wow bounceInDown" data-wow-delay="3s"> & Designer</span></h1>
+		</div>
+
+		<a href="#about">
+			<div class="wow scroll-down bounceInUp" data-wow-delay="7.25s" data-wow-duration="1s">
+				<span>
+		              <i class="fa fa-angle-double-down fa-2x"></i>
+		          </span>
+			</div>
+
+		</a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Mingqi Tan</a>
 				</div>
-				<h1 class="codrops-header__title">Mingqi Tan</h1>
-				<nav class="codrops-demos">
-					<a href="index.html" class="active">Home</a>
-							<a href="aboutme.html">About me</a>					
-						<a href="Mystyle.html">My Works</a>	
-								<a href="resume.pdf">My Resume</a>
-							<a href="gallery.html">Gallery</a>
-				</nav>
-			</header>
-		</main>
-		<script src="js/anime.min.js"></script>
-		<script src="js/main.js"></script>
-		<script>
-		(function() {
-			var lineMaker = new LineMaker({
-				position: 'fixed',
-				lines: [
-					{top: '15%', left: 0, width: '100%', height: 2, color: '#ddd', hidden: true},
-					{top: '85%', left: 0, width: '100%', height: 2, color: '#ddd', hidden: true},
-					{top: 0, left: '90%', width: 2, height: '100%', color: '#ddd', hidden: true},
-					{top: 0, left: '10%', width: 2, height: '100%', color: '#ddd', hidden: true},
-					{top: '15%', left: 0, width: '100%', height: 2, color: '#000', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 0, direction: 'LeftRight' }},
-					{top: '85%', left: 0, width: '100%', height: 2, color: '#000', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 100, direction: 'RightLeft' }},
-					{top: 0, left: '90%', width: 2, height: '100%', color: '#000', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 200, direction: 'BottomTop' }},
-					{top: 0, left: '10%', width: 2, height: '100%', color: '#000', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'TopBottom' }}
-				]
-			});
-			
-			setTimeout(function() {
-				lineMaker.animateLineIn(4, {
-					complete: function() { lineMaker.showLine(0); }
-				});
-				lineMaker.animateLineIn(5, {
-					complete: function() { lineMaker.showLine(1); }
-				});
-				lineMaker.animateLineIn(6, {
-					complete: function() { lineMaker.showLine(2); }
-				});
-				lineMaker.animateLineIn(7, {
-					complete: function() { lineMaker.showLine(3); }
-				});
-			}, 100);
 
-			setTimeout(function() {
-				lineMaker.animateLineOut(4);
-				lineMaker.animateLineOut(5);
-				lineMaker.animateLineOut(6);
-				lineMaker.animateLineOut(7);
-			}, 2000);
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 
-			setTimeout(function() {
-				lineMaker.createLine({top: '50vh', left: '21vw', width: '60vw', height: 16, color: '#E91E63', hidden: true, animation: { duration: 1000, easing: 'easeInOutExpo', delay: 300, direction: 'LeftRight' }});
-				
-				lineMaker.animateLineIn(8);
-			}, 2000);
-		})();
-		</script>
-	</body>
+			</div>
+			<!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+	<!-- about start -->
+
+	<section id="about" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">About Me</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Currently I am working a grad student in Carnegie Mellon University  
+							 <a href = https://www.etc.cmu.edu/blog/author/mingqit/" target="_blank">Entertainment Technology Center</a>
+						     
+							 <br>Previously, I was a Computer Science student in University of Wisconsin Madison
+						
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-3">
+					<div class="iconbox wow rotateInDownLeft">
+						<div class="iconbox-icon">
+							<span class="icon-rocket"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Software</h3>
+							<div class="iconbox-desc">
+								I enjoy coding. I upload some of my projects on <a href="https://github.com/Ruby0412">Github</a>. I also have strong interest in developing mobile application and database.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow rotateInDownLeft">
+						<div class="iconbox-icon">
+							<span class="icon-grid"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Game Design</h3>
+							<div class="iconbox-desc">
+								Making games is cool, eh? <br>I made games on different platforms include HTC Vive(VR), Meta2(AR), Jam-o-Drum and computer games.<br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow rotateInDownRight">
+						<div class="iconbox-icon">
+							<span class="icon-shuffle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Education</h3>
+							<div class="iconbox-desc">
+					Teaching is a meaningful and challenging experience for me. I was lucky to get the chance to teach high school students how to code. 	</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow rotateInDownRight">
+						<div class="iconbox-icon">
+							<span class="icon-question"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Questions?</h3>
+							<div class="iconbox-desc">
+								You can find my <a href="Mingqi resume.pdf" target="_blank">résumé</a> and <a href="#portfolio">portfolio</a> here. If you are looking for a freelancer, you can find my <a href="#contact">contact</a> information here.
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- .row -->
+			</div>
+			<!-- .container -->
+	</section>
+
+	<!-- about end -->
+
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My Portfolio</h2>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- .row -->
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/1.jpg" alt="kilterrewards" />
+								<figcaption>
+									<h2> <span>Helping</span> Hands</h2>
+									<p>An application designed to matching students and faculty based on projects they would like to collaborate on.</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+				<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Web & Mobile Application</h4>
+      </div>
+      <div class="modal-body">
+       <h2 > HelpingHands </h2>
+ <img    class= "center-fit" src="assets/images/999.jpg"/>
+<h3> This application will allow users to create a profile which will include their
+education, skills and interests as well as any other extracurricular skills they may
+have. The system will then match students, faculty and staff based on the
+information found on the profile as well as a project they would like to collaborate on. </h3>
+
+ <img    class="center-fit"  src="assets/images/model.jpg"/>
+
+     <h3> We will be using the client-server model. This model allows us to store user data and task data in Firebase. The information will be provided according to commands from the controller and displayed in the view. We can utilize Firebase embedded authorization and simple search logic.
+All the data and user information for our app will be hosted externally by the Firebase system. All the interfaces and guy components will be hosted locally on the user’s client.
+Authentication    </h3>
+
+
+   
+
+  <img class="center-fit" src="assets/images/155.jpg"/>
+  <img class="center-fit" src="assets/images/156.jpg"/>
+ 
+  <h4 class=text>User can slide to the right to see the side bar that can navigate to any listed page. My task tab contains a list of your current active tasks </h4>
+ 
+
+	   <img class="center-fit" src="assets/images/164.jpg"/>
+ 	  <img  class= "center-fit" src="assets/images/162.jpg"/>
+ 	 
+ 	  
+ 	<h4 class=text> Confirmed task tab contains your requested tasks with helper matched. (mutual agreement) Pending task tab contains your requested tasks without being agreed by task owner yet. Suggested task tab contains possible tasks which you would be able to complete as a helper    </h4>
+
+ 	  
+ 	   <img  class= "center-fit" src="assets/images/161.jpg"/>
+ 	    <img class="center-fit" src="assets/images/163.jpg"/>
+ 	    	<h4 class=text> Completed task tab contains a history of tasks you have requested and have been completed </h4>
+ 	    
+ 
+ 
+ 
+  <img class="center-fit" src="assets/images/157.jpg"/>
+  <img  class= "center-fit" src="assets/images/158.jpg"/>
+   
+   <h4 class=text>  If you are the owner of a task, you will be able to edit your task at any time. A search function is also implemented in order to help user find their known helpers or tasks </h4>
+
+
+
+  <img  class= "center-fit" src="assets/images/edit.jpg"/>
+  <img  class= "center-fit" src="assets/images/190.jpg"/>
+ 
+    <h4 class=text> You can edit your profile, and we will generate a portfolio based on your completed tasks.</h4>
+   
+ 
+  <img class= "center-fit" src="assets/images/159.jpg"/>
+  <img  class= "center-fit" src="assets/images/160.jpg"/>
+   
+   <h4 class=text> If users still confused about those functions above, an intro page is always there to help! </h4>
+   
+      </div>
+    
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal1" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/stockify.png" alt="stockify" />
+								<figcaption>
+									<h2><span>Huanca</span></h2>
+      										<p> A VR experience of mysterious kayak tour in Puerto Rico</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+				<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">VR Game - HTC Vive</h4>
+      </div>
+      <div class="modal-body">
+        <p>A VR experience of mysterious kayak tour in Puerto Rico</p>
+       
+<iframe style="margin-left: 100px;
+    margin-right: auto;" width="672" height="378" src="https://www.youtube.com/embed/So-6lEsdNMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal2" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/carpedime.png" alt="carpedime" />
+								<figcaption>
+									<h2>Babies<span> on the Plane</span></h2>
+									<p>A cool AR game! Save the passengers from crying babies.</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+				<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">AR Game - Meta2</h4>
+      </div>
+      <div class="modal-body">
+        <p>A cool AR game! Save the passengers from crying babies.</p>
+        <iframe style="margin-left: 100px;
+    margin-right: auto;" width="672" height="378" src="https://www.youtube.com/embed/7m952eqUc3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal3" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/logicanalyzer.jpg" alt="askromy" />
+								<figcaption>
+									<h2>High<span>falutin!</span></h2>
+									<p>Four players are brothers who seek for gold, will they get back alive with gold?</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+				<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Jam-o-Drum Game</h4>
+      </div>
+      <div class="modal-body">
+        <p>Four players are brothers who seek for gold, will they get back alive with gold?</p>
+       
+		<iframe style="margin-left: 100px;
+    margin-right: auto;" width="672" height="378" src="https://www.youtube.com/embed/h5n3ru3j21w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal4" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/tron.png" alt="tron" />
+								<figcaption>
+									<h2><span>Pigeon</span>Panic</h2>
+									<p>A VR game that helps two hungry Pigeons to get some food. Players need to act really fast.</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+				<div id="myModal4" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">VR Game - Oculus</h4>
+      </div>
+      <div class="modal-body">
+        <p>A VR game that helps two hungry Pigeons to get some food. Players need to act really fast.</p>
+       
+	<iframe style="margin-left: 100px;
+    margin-right: auto;" width="672" height="378"  src="https://www.youtube.com/embed/sz56G-oPF6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<a type="button"  data-toggle="modal" data-target="#myModal5" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/askromy.jpg" alt="logicanalyzer" />
+								<figcaption>
+									<h2><span> King </span>of the Ring</h2>
+									<p>A world famous fighting competition is coming up, which wrestling warriors can win?</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+				<div id="myModal5" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Jam-o-Drum Game</h4>
+      </div>
+      <div class="modal-body">
+      <p>A world famous fighting competition is coming up, which wrestling warriors can win?</p>
+       
+<iframe style="margin-left: 100px;
+    margin-right: auto;" width="672" height="378"  src="https://www.youtube.com/embed/2Gp87UlB17o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+			</div>
+
+
+		</div>
+		<!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+
+	<!-- Skills start -->
+
+	<section class="pfblock pfblock-gray" id="skills">
+		<div class="container">
+			<div class="row skills">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title">My Skills</h2>
+						</div>
+					</div>
+				</div>
+				<!-- .row -->
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="70" class="chart easyPieChart">
+          		<span class="percent">70</span>
+					</span>
+					<h3 class="text-center">UI/UX</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="90" class="chart easyPieChart">
+              <span class="percent">90</span>
+					</span>
+					<h3 class="text-center">Programming</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="70" class="chart easyPieChart">
+            	<span class="percent">75</span>
+					</span>
+					<h3 class="text-center">Web Design</h3>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center">
+					<span data-percent="80" class="chart easyPieChart">
+          		<span class="percent">80</span>
+					</span>
+					<h3 class="text-center">Movie Editing</h3>
+				</div>
+				<div class="col-xs-12">
+					<hr>
+				</div>
+				<div class="col-md-6 text-center">
+					<div class='flipInY'>
+						<h2>Programming</h2>
+					</div>
+					<div class="bars">
+						<ul class="skills">
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" style="width:85%">Java</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".3s" style="width:70%">C</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".43s" style="width:70%">C#</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".7s" style="width:56%">Python</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay="1s" style="width:50%">C++</span>
+							</li>
+						</ul>
+					</div>
+					<br>
+				</div>
+				<div class="col-md-6 text-center">
+					<div class=' flipInY'>
+						<h2>Experiences</h2>
+					</div>
+					<div class="bars">
+						<ul class="skills">
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" style="width:85%">Unity (VR & AR)</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".3s" style="width:70%">Git/Perforce</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".6s" style="width:55%"> Node.js & Databases</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".9s" style="width:50%">WebGL</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay="1.2s" style="width:40%">Adobe Premier</span>
+							</li>
+						</ul>
+					</div>
+					<br>
+				</div>
+			</div>
+			<!--End row -->
+
+		</div>
+
+	</section>
+
+	<!-- Skills end -->
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Drop me a line</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Feel free to contact me if you have any interesting work/project that you need help with or just want to get in touch.<br>
+							You can reach me at <a href="mailto:mingqit@andrew.cmu.edu" target="_top">mingqit@andrew.cmu.edu</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- .row -->
+      <!-- Reenable if later host in server rather that git
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div> -->
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://github.com/Ruby0412" target="_blank" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-4x fa-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/tan-mingqi-0412/" target="_blank" class="wow fadeInUp" data-wow-delay=".3s"><i class="fa fa-4x fa-linkedin-square"></i></a></li>
+						<li><a href="https://www.etc.cmu.edu/blog/author/mingqit/" target="_blank" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-4x fa-wordpress"></i></a></li>
+						<li><a href="Mingqi resume.pdf" target="_blank" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-4x fa-clipboard"></i></a></li>
+					</ul>
+
+					<p class="heart">
+						Made with <span class="fa fa-heart fa-2x animated pulse"></span>
+					</p>
+
+				</div>
+
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#about"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/typing.js"></script>
+
+</body>
+
 </html>

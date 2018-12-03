@@ -38,12 +38,6 @@ padding-top:10px;
 
 }
 
-
-        canvas {
-            background: white;
-        }
-
-
 li {
 border : 0px solid #ffffff;
 font-family: Futura, Tahoma, sans-serif;
@@ -229,7 +223,6 @@ display: inline;
 }
 .top-nav ul.res li a {
     font-size: 1.05em;
-    font-style: italic;
     color: #fff;
     padding: 1em;
     display: block;
@@ -250,7 +243,7 @@ display: inline;
 }
 .sub-nav ul.res li a {
     font-size: 1.05em;
-        font-style: italic;
+    font-style: italic;
     color: #fff;
     padding: 1em;
     display: block;
