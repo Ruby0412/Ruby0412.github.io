@@ -1,3 +1,3 @@
-# cigarent.github.io
+# mingqit.github.io
 
-Personal Website redirect from http://xiaojunhe.com
+Personal Website redirect from https://ruby0412.github.io/
